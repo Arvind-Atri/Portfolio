@@ -1,0 +1,527 @@
+[33mcommit 288a5ccc977515a2b84cf6acf088b918006f4682[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Arvind-Atri <arvindsh8920@gmail.com>
+Date:   Fri Mar 29 12:54:04 2024 +0530
+
+    init portfolio
+
+[1mdiff --git a/UserImage.jpg b/UserImage.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9666995[m
+Binary files /dev/null and b/UserImage.jpg differ
+[1mdiff --git a/favicon.ico b/favicon.ico[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b9ecdf7[m
+Binary files /dev/null and b/favicon.ico differ
+[1mdiff --git a/index.html b/index.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..957981a[m
+[1m--- /dev/null[m
+[1m+++ b/index.html[m
+[36m@@ -0,0 +1,332 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>PORTFOLIO</title>[m
+[32m+[m[32m    <link rel="stylesheet" href="style.css">[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <div class="wrapper">[m
+[32m+[m[32m        <div class="container">[m
+[32m+[m[32m            <div class="navbar">[m
+[32m+[m[32m                <div class="logo_container">[m
+[32m+[m[32m                    <img src="./userAsset/NavLogo.jpg" class="logo">[m
+[32m+[m[32m                    <div class="logo_text">rvind Sharma</div>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <div class="nav_items">[m
+[32m+[m[32m                    <div><a href="#Projects">Projects</a></div>[m
+[32m+[m[32m                    <div><a href="#Skills">Skills</a></div>[m
+[32m+[m[32m                    <div><a href="#ContactMe">Contact Me</a></div>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m
+[32m+[m
+[32m+[m[32m            <div class="hero_section">[m
+[32m+[m[32m                <div class="hero_section_left">[m
+[32m+[m[32m                    <div class="hero_section_heading">[m
+[32m+[m[32m                        Hi!! Arvind Sharma[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                    <div class=" hero_section_heading hero_section_sub_heading">[m
+[32m+[m[32m                        I am a <span class="role"></span>[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                    <div class="hero_section_desc">[m
+[32m+[m[32m                        I'm a software developer and here is my Portfolio website.Here you'll learn about my journey as a software developer.[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                    <div class="btn_pink" id="btb">Hire Me</div>[m
+[32m+[m[32m                </div>[m
+[32m+[m[41m    [m
+[32m+[m[32m                <div class="hero_section_right">[m
+[32m+[m[32m                    <div class="absolute icons icon-dots">[m
+[32m+[m[32m                        <img src="userAsset/dots.png" alt="">[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                    <div class="absolute icons icon-cube">[m
+[32m+[m[32m                        <img src="userAsset/cube.png" alt="">[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                    <div class="absolute icons icon-circle">[m
+[32m+[m[32m                        <img src="userAsset/circle.png" alt="">[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                    <div class="absolute icons icon-zigzag">[m
+[32m+[m[32m                        <img src="userAsset/zigzags.png" alt="">[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                    <div class="absolute icons icon-plus">[m
+[32m+[m[32m                        <img src="userAsset/plus.png" alt="">[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                    <div class=" user-image">[m
+[32m+[m[32m                        <img src="userAsset/UserImage.jpg" alt="">[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                </div>[m
+[32m+[m[41m    [m
+[32m+[m[32m                <div class="absolute faded-text">[m
+[32m+[m[32m                    Arvind Sharma[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="project-section">[m
+[32m+[m[32m            <h2 class="page-header"></h2>[m
+[32m+[m[32m            <div class="project-container">[m
+[32m+[m[32m                <div class="project-card " id="project1">[m
+[32m+[m[32m                    <div class="project-number project-number-right">[m
+[32m+[m[32m                        01</div>[m
+[32m+[m
+[32m+[m[32m                    <div class="project-content project-content-left">[m
+[32m+[m[32m                        <div class="project-skills-container">[m
+[32m+[m[32m                            <img src="stack/HTML.png" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/CSS.png" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/Javascript.svg" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/Express.png" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/NextJsCircle.png" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/Tailwind.png" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/NodeJs.svg" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/MongoDB.svg" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/Redux.svg" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/Vercel.svg" alt="" class="project-skill">[m
+[32m+[m[32m                        </div>[m
+[32m+[m[32m                        <h2 class="project-heading">[m
+[32m+[m[32m                            Tint & Orange[m
+[32m+[m[32m                        </h2>[m
+[32m+[m[32m                        <p class="project-subHeading">[m
+[32m+[m[32m                            it is a car modification company which provide you sheets to protect your car from scratch[m
+[32m+[m[32m                        </p>[m
+[32m+[m[32m                        <div class="btn-grp">[m
+[32m+[m[32m                            <button class="btn_pink btn-project">Read More</button>[m
+[32m+[m[32m                            <a href="">[m
+[32m+[m[32m                            <i title="GitHubLink" class="fa-brands fa-github icon"></i>[m
+[32m+[m[32m                            </a>[m
+[32m+[m[32m                            <a href="">[m
+[32m+[m[32m                            <i title="Live Link" class="fa-solid fa-link icon"></i></a>[m
+[32m+[m[32m                        </div>[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <div class="project-card" id="project2">[m
+[32m+[m[32m                    <div class="project-number project-number-left">[m
+[32m+[m[32m                        02</div>[m
+[32m+[m
+[32m+[m[32m                    <div class="project-content project-content-right">[m
+[32m+[m[32m                        <div class="project-skills-container">[m
+[32m+[m[32m                            <img src="stack/HTML.png" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/CSS.png" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/Javascript.svg" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/Express.png" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/NextJsCircle.png" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/Tailwind.png" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/NodeJs.svg" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/MongoDB.svg" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/Redux.svg" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/Vercel.svg" alt="" class="project-skill">[m
+[32m+[m[32m                        </div>[m
+[32m+[m[32m                        <h2 class="project-heading">[m
+[32m+[m[32m                            Breaking Copyrights[m
+[32m+[m[32m                        </h2>[m
+[32m+[m[32m                        <p class="project-subHeading">[m
+[32m+[m[32m                            A platform to download copyrights free youtube music[m
+[32m+[m[32m                        </p>[m
+[32m+[m[32m                        <div class="btn-grp">[m
+[32m+[m[32m                            <button class="btn_pink btn-project">Read More</button>[m
+[32m+[m[32m                            <a href="">[m
+[32m+[m[32m                            <i title="GitHubLink" class="fa-brands fa-github icon"></i>[m
+[32m+[m[32m                            </a>[m
+[32m+[m[32m                            <a href="">[m
+[32m+[m[32m                            <i title="Live Link" class="fa-solid fa-link icon"></i></a>[m
+[32m+[m[32m                        </div>[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <div class="project-card" id="project3">[m
+[32m+[m[32m                    <div class="project-number project-number-right">[m
+[32m+[m[32m                        03</div>[m
+[32m+[m
+[32m+[m[32m                    <div class="project-content project-content-left">[m
+[32m+[m[32m                        <div class="project-skills-container">[m
+[32m+[m[32m                            <img src="stack/HTML.png" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/CSS.png" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/Javascript.svg" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/Express.png" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/NextJsCircle.png" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/Tailwind.png" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/NodeJs.svg" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/MongoDB.svg" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/Redux.svg" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/Vercel.svg" alt="" class="project-skill">[m
+[32m+[m[32m                        </div>[m
+[32m+[m[32m                        <h2 class="project-heading">[m
+[32m+[m[32m                            Isha Tattva[m
+[32m+[m[32m                        </h2>[m
+[32m+[m[32m                        <p class="project-subHeading">[m
+[32m+[m[32m                            A Website for interior designer to showcase her works and samples[m
+[32m+[m[32m                        </p>[m
+[32m+[m[32m                        <div class="btn-grp">[m
+[32m+[m[32m                            <button class="btn_pink btn-project">Read More</button>[m
+[32m+[m[32m                            <a href="">[m
+[32m+[m[32m                            <i title="GitHubLink" class="fa-brands fa-github icon"></i>[m
+[32m+[m[32m                            </a>[m
+[32m+[m[32m                            <a href="">[m
+[32m+[m[32m                            <i title="Live Link" class="fa-solid fa-link icon"></i></a>[m
+[32m+[m[32m                        </div>[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <div class="project-card" id="project4">[m
+[32m+[m[32m                    <div class="project-number project-number-left">[m
+[32m+[m[32m                        04</div>[m
+[32m+[m
+[32m+[m[32m                    <div class="project-content project-content-right">[m
+[32m+[m[32m                        <div class="project-skills-container">[m
+[32m+[m[32m                            <img src="stack/HTML.png" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/CSS.png" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/Javascript.svg" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/Express.png" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/NextJsCircle.png" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/Tailwind.png" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/NodeJs.svg" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/MongoDB.svg" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/Redux.svg" alt="" class="project-skill">[m
+[32m+[m[32m                            <img src="stack/Vercel.svg" alt="" class="project-skill">[m
+[32m+[m[32m                        </div>[m
+[32m+[m[32m                        <h2 class="project-heading">[m
+[32m+[m[32m                            Granit[m
+[32m+[m[32m                        </h2>[m
+[32m+[m[32m                        <p class="project-subHeading">[m
+[32m+[m[32m                            A architectural website to plan your building or home (Hebrew[m
+[32m+[m[32m                            Language)[m
+[32m+[m[32m                        </p>[m
+[32m+[m[32m                        <div class="btn-grp">[m
+[32m+[m[32m                            <button class="btn_pink btn-project">Read More</button>[m
+[32m+[m[32m                            <a href="">[m
+[32m+[m[32m                            <i title="GitHubLink" class="fa-brands fa-github icon"></i>[m
+[32m+[m[32m                            </a>[m
+[32m+[m[32m                            <a href="">[m
+[32m+[m[32m                            <i title="Live Link" class="fa-solid fa-link icon"></i></a>[m
+[32m+[m[32m                        </div>[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[41m        [m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m        <div id="skills" class="container skills-container">[m
+[32m+[m[32m            <div class="skill-faded-text">Skills</div>[m
+[32m+[m[32m            <div class="skill-container-left">[m
+[32m+[m[32m                <h2 class="skill-heading"> <span class="caps">M</span>e and <br> My Tech Stack</h2>[m
+[32m+[m[32m                <div class="skill-subHeading">[m
+[32m+[m[32m                    <p>[m
+[32m+[m[32m                        Hi Everyone My name is Arvind Sharma I am a Full Stack Web Developer I[m
+[32m+[m[32m                        have been working for last 3 Years and Currently I am working with a[m
+[32m+[m[32m                        Budding Startup in USA and a full Time Freelancer. Currently I am[m
+[32m+[m[32m                        working on NextJs and Making Beautiful UI-UX are my fey features[m
+[32m+[m[32m                      </p>[m
+[32m+[m[32m                      <p>[m
+[32m+[m[32m                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non[m
+[32m+[m[32m                        doloremque aspernatur, maiores voluptatum minus laudantium?[m
+[32m+[m[32m                        Perspiciatis accusamus minima porro dolores necessitatibus, magni[m
+[32m+[m[32m                        dolorem et qui veniam nulla sequi molestiae maxime.[m
+[32m+[m[32m                      </p>[m
+[32m+[m[32m                      <p>[m
+[32m+[m[32m                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quidem[m
+[32m+[m[32m                        quos ullam veritatis voluptates tenetur qui ipsa nulla culpa itaque?[m
+[32m+[m[32m                      </p>[m[41m [m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="skill-container-right">[m
+[32m+[m[32m                <img src="./userAsset/blob vector.png " class="blob-style" alt="" />[m
+[32m+[m
+[32m+[m[32m                <img src="./stack/HTML.png" alt="" class="skills-logo" />[m
+[32m+[m[32m                <img src="./stack/CSS.png" alt="" class="skills-logo" />[m
+[32m+[m[32m                <img src="./stack/Javascript.svg" alt="" class="skills-logo" />[m
+[32m+[m[32m                <img src="./stack/React.png" alt="" class="skills-logo" />[m
+[32m+[m[32m                <img src="./stack/NodeJs.svg" alt="" class="skills-logo" />[m
+[32m+[m[32m                <img src="./stack/Next.svg" alt="" class="skills-logo" />[m
+[32m+[m[32m                <img src="./stack/Redux.svg" alt="" class="skills-logo" />[m
+[32m+[m[32m                <img src="./stack/Tailwind.png" alt="" class="skills-logo" />[m
+[32m+[m[32m                <img src="./stack/Bootstrap.svg" alt="" class="skills-logo" />[m
+[32m+[m[32m                <img src="./stack/MaterialUI.svg" alt="" class="skills-logo" />[m
+[32m+[m[32m                <img src="./stack/Express.png" alt="" class="skills-logo" />[m
+[32m+[m[32m                <img src="./stack/Git.svg" alt="" class="skills-logo" />[m
+[32m+[m[32m                <img src="./stack/Github.svg" alt="" class="skills-logo" />[m
+[32m+[m[32m                <img src="./stack/Graphql.svg" alt="" class="skills-logo" />[m
+[32m+[m[32m                <img src="./stack/MongoDB.svg" alt="" class="skills-logo" />[m
+[32m+[m[32m                <img src="./stack/Vercel.svg" alt="" class="skills-logo" />[m
+[32m+[m[32m                <img src="./stack/ChartJs.svg" alt="" class="skills-logo" />[m
+[32m+[m[32m                <img src="./stack/Bash.svg" alt="" class="skills-logo" />[m
+[32m+[m[32m                <img src="./stack/Docker.svg" alt="" class="skills-logo" />[m
+[32m+[m[32m                <img src="./stack/K8s.svg" alt="" class="skills-logo" />[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m[32m        <div class="contactus-form-container">[m
+[32m+[m[32m            <div class="container">[m
+[32m+[m[32m                <h1 class="contactus-heading">Contact Me</h1>[m
+[32m+[m[32m                <h3 class="contactus-sub-heading">Questions, Thoughts, Or Just Want To Say Hello?</h3>[m
+[32m+[m[32m                <div class="contactus-form-container">[m
+[32m+[m[32m                    <form action="">[m
+[32m+[m[32m                        <div class="formfield-container">[m
+[32m+[m[32m                            <input  class="formfield" name="name" id="" placeholder="Enter Your Name" type="text">[m
+[32m+[m[32m                            <input  class="formfield" name="email" id="" placeholder="Enter Your Email Address" type="email">[m
+[32m+[m[32m                            <input  class="formfield" name="subject" id="" placeholder="Enter Your Subject" type="text">[m
+[32m+[m[41m                            [m
+[32m+[m[32m                            <textarea name="message" id="" cols="30" rows="10" class="formfield formfield-textarea" placeholder="Enter Your Message">[m
+[32m+[m
+[32m+[m[32m                            </textarea>[m
+[32m+[m
+[32m+[m[32m                        </div>[m
+[32m+[m[32m                        <button class="btn_pink" type="submit" id="submit-btn">Send Message <i class="submit-icon fa-solid fa-paper-plane " ></i></button>[m
+[32m+[m[32m                    </form>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m[32m        <footer>[m
+[32m+[m[32m            <div class="container">[m
+[32m+[m[32m                <div class="footer-wrapper">[m
+[32m+[m[32m                    <div class="link-wrapper">[m
+[32m+[m[32m                        <div><a href="#Projects" > Projects</a></div>[m
+[32m+[m[32m                        <div><a href="#Skills" > Skills</a></div>[m
+[32m+[m[32m                        <div><a href="#Contct Me" > Contact Me</a></div>[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                    <div class="icon-wrapper">[m
+[32m+[m[32m                        <i class="fa-brands fa-linkedin icon"></i>[m
+[32m+[m[32m                        <i class="fa-brands fa-github icon"></i>[m
+[32m+[m[32m                        <i class="fa-brands fa-twitter icon"></i>[m
+[32m+[m[32m                        <i class="fa-brands fa-instagram icon"></i>[m
+[32m+[m[32m                        <i class="fa-regular fa-envelope icon"></i>[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <div class="footer-faded-text">[m
+[32m+[m[32m                    Arvind Sharma[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </footer>[m
+[32m+[m[32m    </div>[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>[m
+[32m+[m[32m  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>[m
+[32m+[m[32m  <script>[m
+[32m+[m[32m    var typeData = new Typed(".role", {[m
+[32m+[m[32m      strings: [[m
+[32m+[m[32m        "Full Stack Developer",[m
+[32m+[m[32m        "Web Developer",[m
+[32m+[m[32m        "UI-UX Designer",[m
+[32m+[m[32m        "Backend Developer",[m
+[32m+[m[32m        "Coder",[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      loop: true,[m
+[32m+[m[32m      typeSpeed: 100,[m
+[32m+[m[32m      backSpeed: 80,[m
+[32m+[m[32m      backDelay: 1000,[m
+[32m+[m[32m    });[m
+[32m+[m[32m  </script>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/projects/Project1.png b/projects/Project1.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2115aab[m
+Binary files /dev/null and b/projects/Project1.png differ
+[1mdiff --git a/projects/Project2.png b/projects/Project2.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..23c67c3[m
+Binary files /dev/null and b/projects/Project2.png differ
+[1mdiff --git a/projects/Project3.png b/projects/Project3.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..894b4d3[m
+Binary files /dev/null and b/projects/Project3.png differ
+[1mdiff --git a/projects/Project4.png b/projects/Project4.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..21ed873[m
+Binary files /dev/null and b/projects/Project4.png differ
+[1mdiff --git a/stack/Bash.svg b/stack/Bash.svg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b3f3125[m
+[1m--- /dev/null[m
+[1m+++ b/stack/Bash.svg[m
+[36m@@ -0,0 +1,9 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<svg width="224px" height="256px" viewBox="0 0 224 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">[m
+[32m+[m[32m    <g>[m
+[32m+[m				[32m<path d="M207.953496,52.161792 L127.317154,4.28699154 C117.73318,-1.42899718 105.786545,-1.42899718 96.2025707,4.28699154 L15.5500822,52.161792 C5.848665,58.0143618 -0.0579442252,68.5395346 0.000428679482,79.8694336 L0.000428679482,175.602888 C-0.0522462707,186.927041 5.85362572,197.444768 15.5500822,203.294383 L96.186424,251.153037 C105.771373,256.86549 117.716059,256.86549 127.301008,251.153037 L207.937349,203.294383 C217.644962,197.44581 223.55812,186.9199 223.50315,175.586741 L223.50315,79.8694336 C223.561523,68.5395346 217.654913,58.0143618 207.953496,52.161792 Z" fill="#FFFFFF"></path>[m
+[32m+[m				[32m<path d="M208.411532,52.276683 L127.597582,4.29643402 C117.992498,-1.43214467 106.019549,-1.43214467 96.4144654,4.29643402 L15.5843327,52.276683 C5.86154721,58.1421436 -0.0580718526,68.6904991 0.000429623687,80.0453532 L0.000429623687,175.989669 C-0.0523613478,187.338765 5.86651886,197.879657 15.5843327,203.742157 L96.3982832,251.706224 C106.004343,257.431259 117.975339,257.431259 127.581399,251.706224 L208.39535,203.742157 C218.124345,197.880703 224.050527,187.331607 223.995435,175.973487 L223.995435,80.0453532 C224.053937,68.6904991 218.134318,58.1421436 208.411532,52.276683 Z M99.2301697,246.803014 L18.4162192,198.838948 C10.4300926,193.999639 5.56585934,185.327547 5.59969728,175.989669 L5.59969728,80.0453532 C5.56264048,70.7066408 10.4277023,62.033071 18.4162192,57.1960744 L99.2301697,9.21582548 C107.095348,4.52357839 116.900517,4.52357839 124.765695,9.21582548 L205.514917,57.1960744 C212.17156,61.2279088 216.712503,67.9889997 217.926671,75.6761569 C215.240424,69.9638372 209.20446,68.3941629 202.1652,72.4397151 L125.768992,119.756494 C116.237671,125.306991 109.214593,131.569506 109.19841,143.058874 L109.19841,237.271693 C109.19841,244.149132 111.965568,248.59924 116.237671,249.909999 C114.838668,250.166379 113.420175,250.301731 111.997932,250.314554 C107.503971,250.311263 103.093756,249.098314 99.2301697,246.803014 Z" fill="#2F3A3E"></path>[m
+[32m+[m				[32m<path d="M187.007319,185.05984 L166.920894,197.072944 C166.382945,197.289147 166.022425,197.801466 166.000535,198.380822 L166.000535,203.660774 C166.000535,204.30664 166.436494,204.564987 166.969334,204.2582 L187.362545,191.857577 C187.861962,191.483188 188.100868,190.854486 187.976118,190.242913 L187.976118,185.608826 C187.959971,185.0114 187.491719,184.753054 187.007319,185.05984 Z" fill="#3AB14A"></path>[m
+[32m+[m				[32m<path d="M144.262952,140.831868 C144.908817,140.508935 145.441657,140.831868 145.457803,141.752226 L145.52239,148.75987 C147.937868,147.662506 150.63266,147.335523 153.240486,147.823365 C153.741032,147.952538 153.950938,148.630697 153.757179,149.438029 L152.223247,155.5899 C152.106964,156.054178 151.867023,156.478259 151.528942,156.817045 C151.410206,156.934194 151.274035,157.032237 151.125276,157.107685 C150.94275,157.206405 150.732219,157.240546 150.52785,157.204565 C147.984993,156.641458 145.323113,157.068744 143.084247,158.399417 C139.810579,159.87411 137.670697,163.093345 137.578241,166.682645 C137.578241,169.911974 139.192905,170.800039 144.828084,170.896919 C152.271687,171.026092 155.501016,174.271568 155.581749,181.779758 C155.404525,189.616874 151.790949,196.979831 145.700003,201.914623 L145.829176,208.793094 C145.817697,209.647405 145.37394,210.437656 144.650471,210.892157 L140.581517,213.233421 C139.935651,213.556354 139.402812,213.233421 139.386665,212.329209 L139.386665,205.563765 C135.89899,207.016963 132.362875,207.356042 130.102345,206.45183 C129.682532,206.290364 129.488772,205.660645 129.666385,204.934046 L131.13573,198.717587 C131.24746,198.225629 131.499922,197.776809 131.862329,197.425856 C131.977267,197.315759 132.107853,197.223261 132.249848,197.151363 C132.460373,197.056728 132.701336,197.056728 132.911861,197.151363 C135.790274,197.931772 138.860474,197.542919 141.453436,196.069538 C145.195213,194.264929 147.626918,190.533412 147.766774,186.381551 C147.766774,182.893876 145.845323,181.440678 141.308116,181.408385 C135.446884,181.408385 130.005465,180.27812 129.892438,171.720398 C130.027305,164.244122 133.498017,157.21978 139.354372,152.570478 L139.063732,145.530541 C139.061125,144.663931 139.507025,143.857647 140.242437,143.399184 L144.262952,140.831868 Z" fill="#FFFFFF"></path>[m
+[32m+[m[32m    </g>[m
+[32m+[m[32m</svg>[m
+[1mdiff --git a/stack/Bootstrap.svg b/stack/Bootstrap.svg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7965e4c[m
+[1m--- /dev/null[m
+[1m+++ b/stack/Bootstrap.svg[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32m<svg height="1992" viewBox="0 0 512 407.864" width="2500" xmlns="http://www.w3.org/2000/svg"><path d="m106.344 0c-29.214 0-50.831 25.57-49.863 53.3.929 26.641-.278 61.145-8.964 89.283-8.717 28.217-23.449 46.098-47.517 48.393v25.912c24.068 2.3 38.8 20.172 47.516 48.393 8.687 28.138 9.893 62.642 8.964 89.283-.968 27.726 20.649 53.3 49.868 53.3h299.347c29.214 0 50.827-25.57 49.859-53.3-.929-26.641.278-61.145 8.964-89.283 8.717-28.221 23.413-46.1 47.482-48.393v-25.912c-24.068-2.3-38.764-20.172-47.482-48.393-8.687-28.134-9.893-62.642-8.964-89.283.968-27.726-20.645-53.3-49.859-53.3h-299.355zm240.775 251.067c0 38.183-28.481 61.34-75.746 61.34h-80.458a8.678 8.678 0 0 1 -8.678-8.678v-199.593a8.678 8.678 0 0 1 8.678-8.678h80c39.411 0 65.276 21.348 65.276 54.124 0 23.005-17.4 43.6-39.567 47.208v1.2c30.176 3.31 50.495 24.21 50.495 53.077zm-84.519-128.1h-45.876v64.8h38.639c29.87 0 46.34-12.028 46.34-33.527-.003-20.148-14.163-31.273-39.103-31.273zm-45.876 90.511v71.411h47.564c31.1 0 47.573-12.479 47.573-35.931s-16.935-35.484-49.573-35.484h-45.564z" fill="#7952b3" fill-rule="evenodd"/></svg>[m
+\ No newline at end of file[m
+[1mdiff --git a/stack/CSS.png b/stack/CSS.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d897f0f[m
+Binary files /dev/null and b/stack/CSS.png differ
+[1mdiff --git a/stack/ChartJs.svg b/stack/ChartJs.svg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..24f5a2b[m
+[1m--- /dev/null[m
+[1m+++ b/stack/ChartJs.svg[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32m<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg"><title>Artboard 6</title><g fill="none" fill-rule="evenodd"><path d="M144.086 80.568c-21.978.43-17.402 14.346-32.89 17.866C95.46 102.01 92.975 60 77.243 60c-15.733 0-19.216 40.806-38.918 68.823l-.56.794L80 154l64.086-37V80.568z" fill="#36A2EB"/><path d="M144.086 79.3C136.726 69.856 131.736 59 121 59c-19 0-14 31-35 31s-23.207-33.346-47-2c-7.58 9.988-13.682 21.124-18.475 31.662L80 154l64.086-37V79.3z" fill="#FFCE56"/><path d="M15.914 92.143C23.124 72.173 26.237 56 40 56c21 0 26 59 44 53s16-38 44-38c5.33 0 10.772 3.263 16.086 8.546V117L80 154l-64.086-37V92.143z" fill-opacity=".8" fill="#FE6184"/><path stroke="#E7E9ED" stroke-width="8" d="M80 6l64.086 37v74L80 154l-64.086-37V43z"/></g></svg>[m
+\ No newline at end of file[m
+[1mdiff --git a/stack/Docker.svg b/stack/Docker.svg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6f66bd3[m
+[1m--- /dev/null[m
+[1m+++ b/stack/Docker.svg[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32m<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="96px" height="96px"><path fill="#2395ec" d="M47.527,19.847c-0.13-0.102-1.345-1.007-3.908-1.007c-0.677,0.003-1.352,0.06-2.019,0.171 c-0.496-3.354-3.219-4.93-3.345-5.003l-0.688-0.392l-0.453,0.644c-0.567,0.866-1.068,1.76-1.311,2.763 c-0.459,1.915-0.18,3.713,0.806,5.25C35.417,22.928,33.386,22.986,33,23H1.582c-0.826,0.001-1.496,0.66-1.501,1.474 c-0.037,2.733,0.353,5.553,1.306,8.119c1.089,2.818,2.71,4.894,4.818,6.164C8.567,40.184,12.405,41,16.756,41 c1.965,0.006,3.927-0.169,5.859-0.524c2.686-0.487,5.271-1.413,7.647-2.74c1.958-1.119,3.72-2.542,5.219-4.215 c2.505-2.798,3.997-5.913,5.107-8.682c0.149,0,0.298,0,0.442,0c2.743,0,4.429-1.083,5.359-1.99 c0.618-0.579,1.101-1.284,1.414-2.065L48,20.216L47.527,19.847z"/><path fill="#2395ec" d="M8,22H5c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1h3c0.552,0,1,0.448,1,1v3 C9,21.552,8.552,22,8,22z"/><path fill="#2395ec" d="M14,22h-3c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1h3c0.552,0,1,0.448,1,1v3 C15,21.552,14.552,22,14,22z"/><path fill="#2395ec" d="M20,22h-3c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1h3c0.552,0,1,0.448,1,1v3 C21,21.552,20.552,22,20,22z"/><path fill="#2395ec" d="M26,22h-3c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1h3c0.552,0,1,0.448,1,1v3 C27,21.552,26.552,22,26,22z"/><path fill="#2395ec" d="M14,16h-3c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1h3c0.552,0,1,0.448,1,1v3 C15,15.552,14.552,16,14,16z"/><path fill="#2395ec" d="M20,16h-3c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1h3c0.552,0,1,0.448,1,1v3 C21,15.552,20.552,16,20,16z"/><path fill="#2395ec" d="M26,16h-3c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1h3c0.552,0,1,0.448,1,1v3 C27,15.552,26.552,16,26,16z"/><path fill="#2395ec" d="M26,10h-3c-0.552,0-1-0.448-1-1V6c0-0.552,0.448-1,1-1h3c0.552,0,1,0.448,1,1v3 C27,9.552,26.552,10,26,10z"/><path fill="#2395ec" d="M32,22h-3c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1h3c0.552,0,1,0.448,1,1v3 C33,21.552,32.552,22,32,22z"/></svg>[m
+\ No newline at end of file[m
+[1mdiff --git a/stack/Express.png b/stack/Express.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..568baba[m
+Binary files /dev/null and b/stack/Express.png differ
+[1mdiff --git a/stack/Git.svg b/stack/Git.svg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e52b883[m
+[1m--- /dev/null[m
+[1m+++ b/stack/Git.svg[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32m<!-- Generated by IcoMoon.io -->[m
+[32m+[m[32m<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">[m
+[32m+[m[32m<title>git</title>[m
+[32m+[m[32m<path fill="#f05032" d="M31.395 14.573l-13.972-13.971c-0.805-0.804-2.109-0.804-2.917 0l-2.895 2.9 3.68 3.68c0.86-0.287 1.839-0.093 2.519 0.588 0.688 0.687 0.877 1.677 0.584 2.533l3.544 3.547c0.86-0.297 1.849-0.104 2.533 0.58 0.961 0.96 0.961 2.512 0 3.472-0.959 0.959-2.508 0.959-3.467 0-0.719-0.721-0.899-1.783-0.539-2.661l-3.319-3.301v8.7c0.235 0.115 0.456 0.271 0.651 0.464 0.951 0.961 0.951 2.511 0 3.467-0.959 0.961-2.519 0.961-3.479 0-0.959-0.959-0.959-2.505 0-3.464 0.243-0.24 0.516-0.421 0.807-0.541v-8.785c-0.289-0.121-0.565-0.296-0.8-0.535-0.727-0.727-0.901-1.789-0.528-2.679l-3.616-3.633-9.581 9.575c-0.8 0.807-0.8 2.112 0 2.919l13.973 13.969c0.805 0.805 2.109 0.805 2.915 0l13.907-13.907c0.807-0.804 0.807-2.109 0-2.916z"></path>[m
+[32m+[m[32m</svg>[m
+[1mdiff --git a/stack/Github.svg b/stack/Github.svg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..985f3e3[m
+[1m--- /dev/null[m
+[1m+++ b/stack/Github.svg[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32m<!-- Generated by IcoMoon.io -->[m
+[32m+[m[32m<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">[m
+[32m+[m[32m<title>github</title>[m
+[32m+[m[32m<path d="M16 0.396c-8.84 0-16 7.164-16 16 0 7.071 4.584 13.067 10.94 15.18 0.8 0.151 1.093-0.344 1.093-0.769 0-0.38-0.013-1.387-0.020-2.72-4.451 0.965-5.389-2.147-5.389-2.147-0.728-1.847-1.78-2.34-1.78-2.34-1.449-0.992 0.112-0.972 0.112-0.972 1.607 0.112 2.451 1.648 2.451 1.648 1.427 2.447 3.745 1.74 4.66 1.331 0.144-1.035 0.556-1.74 1.013-2.14-3.553-0.4-7.288-1.776-7.288-7.907 0-1.747 0.62-3.173 1.647-4.293-0.18-0.404-0.72-2.031 0.14-4.235 0 0 1.34-0.429 4.4 1.64 1.28-0.356 2.64-0.532 4-0.54 1.36 0.008 2.72 0.184 4 0.54 3.040-2.069 4.38-1.64 4.38-1.64 0.86 2.204 0.32 3.831 0.16 4.235 1.020 1.12 1.64 2.547 1.64 4.293 0 6.147-3.74 7.5-7.3 7.893 0.56 0.48 1.080 1.461 1.080 2.96 0 2.141-0.020 3.861-0.020 4.381 0 0.42 0.28 0.92 1.1 0.76 6.401-2.099 10.981-8.099 10.981-15.159 0-8.836-7.164-16-16-16z"></path>[m
+[32m+[m[32m</svg>[m
+[1mdiff --git a/stack/Graphql.svg b/stack/Graphql.svg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..afa84f3[m
+[1m--- /dev/null[m
+[1m+++ b/stack/Graphql.svg[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32m<svg width="2222" height="2500" viewBox="0 0 256 288" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M152.576 32.963l59.146 34.15a25.819 25.819 0 0 1 5.818-4.604c12.266-7.052 27.912-2.865 35.037 9.402 7.052 12.267 2.865 27.912-9.402 35.037a25.698 25.698 0 0 1-6.831 2.72v68.325a25.7 25.7 0 0 1 6.758 2.702c12.34 7.125 16.527 22.771 9.402 35.038-7.052 12.266-22.771 16.453-35.038 9.402a25.464 25.464 0 0 1-6.34-5.147l-58.786 33.94a25.671 25.671 0 0 1 1.295 8.08c0 14.103-11.458 25.636-25.635 25.636-14.177 0-25.635-11.46-25.635-25.636 0-2.52.362-4.954 1.037-7.253l-59.13-34.14a25.824 25.824 0 0 1-5.738 4.52c-12.34 7.051-27.986 2.864-35.038-9.402-7.051-12.267-2.864-27.913 9.402-35.038a25.71 25.71 0 0 1 6.758-2.703v-68.324a25.698 25.698 0 0 1-6.831-2.72C.558 99.897-3.629 84.178 3.423 71.911c7.052-12.267 22.77-16.454 35.037-9.402a25.82 25.82 0 0 1 5.79 4.575l59.163-34.159a25.707 25.707 0 0 1-1.048-7.29C102.365 11.46 113.823 0 128 0c14.177 0 25.635 11.459 25.635 25.635 0 2.548-.37 5.007-1.059 7.328zm-6.162 10.522l59.287 34.23a25.599 25.599 0 0 0 2.437 19.831c3.609 6.278 9.488 10.44 16.013 12.062v68.41c-.333.081-.664.17-.993.264L145.725 44.17c.234-.224.464-.452.689-.684zm-36.123.7l-77.432 134.11a25.824 25.824 0 0 0-1.01-.27v-68.417c6.525-1.622 12.404-5.784 16.013-12.062a25.6 25.6 0 0 0 2.427-19.869l59.27-34.22c.239.247.483.49.732.727zm24.872 6.075l77.414 134.08a25.492 25.492 0 0 0-4.513 5.757 25.7 25.7 0 0 0-2.702 6.758H50.64a25.71 25.71 0 0 0-2.704-6.758 25.825 25.825 0 0 0-4.506-5.724l77.429-134.107A25.715 25.715 0 0 0 128 51.27c2.487 0 4.89-.352 7.163-1.01zm11.795 194.478l58.902-34.008a25.865 25.865 0 0 1-.473-1.682H50.607c-.082.333-.171.663-.266.992l59.19 34.175A25.558 25.558 0 0 1 128 236.373a25.564 25.564 0 0 1 18.958 8.365z" fill="#E535AB" fill-rule="evenodd"/></svg>[m
+\ No newline at end of file[m
+[1mdiff --git a/stack/HTML.png b/stack/HTML.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5f2157a[m
+Binary files /dev/null and b/stack/HTML.png differ
+[1mdiff --git a/stack/Javascript.svg b/stack/Javascript.svg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..37d265b[m
+[1m--- /dev/null[m
+[1m+++ b/stack/Javascript.svg[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32m<!-- Generated by IcoMoon.io -->[m
+[32m+[m[32m<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">[m
+[32m+[m[32m<title>javascript</title>[m
+[32m+[m[32m<path fill="#f7df1e" d="M0 0h32v32h-32zM29.379 24.368c-0.233-1.46-1.184-2.687-4.004-3.831-0.981-0.46-2.072-0.78-2.396-1.52-0.121-0.44-0.14-0.68-0.061-0.94 0.2-0.861 1.22-1.12 2.020-0.88 0.52 0.16 1 0.56 1.301 1.2 1.379-0.901 1.379-0.901 2.34-1.5-0.36-0.56-0.539-0.801-0.781-1.040-0.84-0.94-1.959-1.42-3.779-1.379l-0.94 0.119c-0.901 0.22-1.76 0.7-2.28 1.34-1.52 1.721-1.081 4.721 0.759 5.961 1.82 1.36 4.481 1.659 4.821 2.94 0.32 1.56-1.16 2.060-2.621 1.88-1.081-0.24-1.68-0.781-2.34-1.781l-2.44 1.401c0.28 0.64 0.6 0.919 1.080 1.479 2.32 2.341 8.12 2.221 9.161-1.339 0.039-0.12 0.32-0.94 0.099-2.2zM17.401 14.708h-2.997c0 2.584-0.012 5.152-0.012 7.74 0 1.643 0.084 3.151-0.184 3.615-0.44 0.919-1.573 0.801-2.088 0.64-0.528-0.261-0.796-0.621-1.107-1.14-0.084-0.14-0.147-0.261-0.169-0.261l-2.433 1.5c0.407 0.84 1 1.563 1.765 2.023 1.14 0.68 2.672 0.9 4.276 0.54 1.044-0.301 1.944-0.921 2.415-1.881 0.68-1.24 0.536-2.76 0.529-4.461 0.016-2.739 0-5.479 0-8.239z"></path>[m
+[32m+[m[32m</svg>[m
+[1mdiff --git a/stack/K8s.svg b/stack/K8s.svg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e4520b4[m
+[1m--- /dev/null[m
+[1m+++ b/stack/K8s.svg[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32m<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="96px" height="96px"><path fill="#0277bd" d="M25.875,24.208c0.102,0.131,0.145,0.32,0.116,0.495l-0.276,1.208	c-0.029,0.189-0.16,0.335-0.319,0.422l-1.118,0.524c-0.16,0.087-0.363,0.087-0.523,0l-1.118-0.524	c-0.16-0.087-0.29-0.233-0.319-0.422l-0.276-1.208c-0.029-0.175,0.015-0.364,0.116-0.495l0.784-0.975	C23.043,23.087,23.218,23,23.406,23h1.22c0.189,0,0.363,0.087,0.465,0.233L25.875,24.208z"/><path fill="#0277bd" d="M25.312,15.33l0.048,0.375c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23	c0.019,0.317,0.374,0.48,0.633,0.298c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202	C28.984,16.454,27.239,15.599,25.312,15.33z M25.312,15.33l0.048,0.375c0.134,1.037,0.23,2.085,0.326,3.122	c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298c0.326-0.24,0.662-0.48,1.007-0.711	c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M25.312,15.33l0.048,0.375	c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298	c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M25.312,15.33l0.048,0.375c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23	c0.019,0.317,0.374,0.48,0.633,0.298c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202	C28.984,16.454,27.239,15.599,25.312,15.33z M25.312,15.33l0.048,0.375c0.134,1.037,0.23,2.085,0.326,3.122	c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298c0.326-0.24,0.662-0.48,1.007-0.711	c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M32.119,19.835l-0.259,0.279	c-0.719,0.769-1.457,1.508-2.196,2.248c-0.47,0.48-0.978,0.941-1.467,1.412c0.652,0.163,1.304,0.336,1.956,0.528	c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115c0.01-0.154,0.01-0.317,0.01-0.48C33.519,22.996,33.011,21.286,32.119,19.835z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248c-0.47,0.48-0.978,0.941-1.467,1.412	c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115c0.01-0.154,0.01-0.317,0.01-0.48	C33.519,22.996,33.011,21.286,32.119,19.835z M25.312,15.33l0.048,0.375c0.134,1.037,0.23,2.085,0.326,3.122	c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298c0.326-0.24,0.662-0.48,1.007-0.711	c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M25.312,15.33l0.048,0.375	c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298	c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M32.627,28.02c-1.045-0.067-2.081-0.163-3.126-0.259c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528	c0.163,0.432,0.316,0.865,0.47,1.307c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736	L32.627,28.02z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248c-0.47,0.48-0.978,0.941-1.467,1.412	c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115c0.01-0.154,0.01-0.317,0.01-0.48	C33.519,22.996,33.011,21.286,32.119,19.835z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248	c-0.47,0.48-0.978,0.941-1.467,1.412c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115	c0.01-0.154,0.01-0.317,0.01-0.48C33.519,22.996,33.011,21.286,32.119,19.835z M32.627,28.02c-1.045-0.067-2.081-0.163-3.126-0.259	c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528c0.163,0.432,0.316,0.865,0.47,1.307	c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736L32.627,28.02z M25.312,15.33l0.048,0.375	c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298	c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M25.312,15.33l0.048,0.375c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23	c0.019,0.317,0.374,0.48,0.633,0.298c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202	C28.984,16.454,27.239,15.599,25.312,15.33z M32.627,28.02c-1.045-0.067-2.081-0.163-3.126-0.259	c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528c0.163,0.432,0.316,0.865,0.47,1.307	c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736L32.627,28.02z M32.119,19.835l-0.259,0.279	c-0.719,0.769-1.457,1.508-2.196,2.248c-0.47,0.48-0.978,0.941-1.467,1.412c0.652,0.163,1.304,0.336,1.956,0.528	c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115c0.01-0.154,0.01-0.317,0.01-0.48C33.519,22.996,33.011,21.286,32.119,19.835z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248c-0.47,0.48-0.978,0.941-1.467,1.412	c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115c0.01-0.154,0.01-0.317,0.01-0.48	C33.519,22.996,33.011,21.286,32.119,19.835z M32.627,28.02c-1.045-0.067-2.081-0.163-3.126-0.259	c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528c0.163,0.432,0.316,0.865,0.47,1.307	c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736L32.627,28.02z M25.312,15.33l0.048,0.375	c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298	c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M26.606,33.62c-0.556-0.884-1.074-1.796-1.592-2.699c-0.23-0.394-0.451-0.788-0.662-1.191c-0.153-0.279-0.547-0.279-0.7,0	c-0.221,0.413-0.451,0.817-0.69,1.21c-0.527,0.903-1.055,1.806-1.611,2.69l-0.24,0.384c0.892,0.279,1.841,0.423,2.819,0.423	c1.007,0,1.985-0.154,2.896-0.452L26.606,33.62z M25.312,15.33l0.048,0.375c0.134,1.037,0.23,2.085,0.326,3.122	c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298c0.326-0.24,0.662-0.48,1.007-0.711	c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M32.627,28.02	c-1.045-0.067-2.081-0.163-3.126-0.259c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528	c0.163,0.432,0.316,0.865,0.47,1.307c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736	L32.627,28.02z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248c-0.47,0.48-0.978,0.941-1.467,1.412	c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115c0.01-0.154,0.01-0.317,0.01-0.48	C33.519,22.996,33.011,21.286,32.119,19.835z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248	c-0.47,0.48-0.978,0.941-1.467,1.412c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115	c0.01-0.154,0.01-0.317,0.01-0.48C33.519,22.996,33.011,21.286,32.119,19.835z M32.627,28.02c-1.045-0.067-2.081-0.163-3.126-0.259	c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528c0.163,0.432,0.316,0.865,0.47,1.307	c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736L32.627,28.02z M25.312,15.33l0.048,0.375	c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298	c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M26.606,33.62c-0.556-0.884-1.074-1.796-1.592-2.699c-0.23-0.394-0.451-0.788-0.662-1.191c-0.153-0.279-0.547-0.279-0.7,0	c-0.221,0.413-0.451,0.817-0.69,1.21c-0.527,0.903-1.055,1.806-1.611,2.69l-0.24,0.384c0.892,0.279,1.841,0.423,2.819,0.423	c1.007,0,1.985-0.154,2.896-0.452L26.606,33.62z M19.875,27.492c-0.451,0.058-0.892,0.125-1.342,0.173	c-1.045,0.125-2.071,0.25-3.116,0.346l-0.518,0.048c0.7,1.96,2.023,3.631,3.72,4.765l0.134-0.404	c0.326-0.999,0.671-1.979,1.026-2.968c0.163-0.48,0.336-0.951,0.518-1.431C20.412,27.741,20.172,27.444,19.875,27.492z M26.606,33.62c-0.556-0.884-1.074-1.796-1.592-2.699c-0.23-0.394-0.451-0.788-0.662-1.191c-0.153-0.279-0.547-0.279-0.7,0	c-0.221,0.413-0.451,0.817-0.69,1.21c-0.527,0.903-1.055,1.806-1.611,2.69l-0.24,0.384c0.892,0.279,1.841,0.423,2.819,0.423	c1.007,0,1.985-0.154,2.896-0.452L26.606,33.62z M25.312,15.33l0.048,0.375c0.134,1.037,0.23,2.085,0.326,3.122	c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298c0.326-0.24,0.662-0.48,1.007-0.711	c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M32.627,28.02	c-1.045-0.067-2.081-0.163-3.126-0.259c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528	c0.163,0.432,0.316,0.865,0.47,1.307c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736	L32.627,28.02z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248c-0.47,0.48-0.978,0.941-1.467,1.412	c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115c0.01-0.154,0.01-0.317,0.01-0.48	C33.519,22.996,33.011,21.286,32.119,19.835z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248	c-0.47,0.48-0.978,0.941-1.467,1.412c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115	c0.01-0.154,0.01-0.317,0.01-0.48C33.519,22.996,33.011,21.286,32.119,19.835z M32.627,28.02c-1.045-0.067-2.081-0.163-3.126-0.259	c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528c0.163,0.432,0.316,0.865,0.47,1.307	c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736L32.627,28.02z M25.312,15.33l0.048,0.375	c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298	c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M26.606,33.62c-0.556-0.884-1.074-1.796-1.592-2.699c-0.23-0.394-0.451-0.788-0.662-1.191c-0.153-0.279-0.547-0.279-0.7,0	c-0.221,0.413-0.451,0.817-0.69,1.21c-0.527,0.903-1.055,1.806-1.611,2.69l-0.24,0.384c0.892,0.279,1.841,0.423,2.819,0.423	c1.007,0,1.985-0.154,2.896-0.452L26.606,33.62z M19.875,27.492c-0.451,0.058-0.892,0.125-1.342,0.173	c-1.045,0.125-2.071,0.25-3.116,0.346l-0.518,0.048c0.7,1.96,2.023,3.631,3.72,4.765l0.134-0.404	c0.326-0.999,0.671-1.979,1.026-2.968c0.163-0.48,0.336-0.951,0.518-1.431C20.412,27.741,20.172,27.444,19.875,27.492z M19.875,27.492c-0.451,0.058-0.892,0.125-1.342,0.173c-1.045,0.125-2.071,0.25-3.116,0.346l-0.518,0.048	c0.7,1.96,2.023,3.631,3.72,4.765l0.134-0.404c0.326-0.999,0.671-1.979,1.026-2.968c0.163-0.48,0.336-0.951,0.518-1.431	C20.412,27.741,20.172,27.444,19.875,27.492z M26.606,33.62c-0.556-0.884-1.074-1.796-1.592-2.699	c-0.23-0.394-0.451-0.788-0.662-1.191c-0.153-0.279-0.547-0.279-0.7,0c-0.221,0.413-0.451,0.817-0.69,1.21	c-0.527,0.903-1.055,1.806-1.611,2.69l-0.24,0.384c0.892,0.279,1.841,0.423,2.819,0.423c1.007,0,1.985-0.154,2.896-0.452	L26.606,33.62z M25.312,15.33l0.048,0.375c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23	c0.019,0.317,0.374,0.48,0.633,0.298c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202	C28.984,16.454,27.239,15.599,25.312,15.33z M32.627,28.02c-1.045-0.067-2.081-0.163-3.126-0.259	c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528c0.163,0.432,0.316,0.865,0.47,1.307	c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736L32.627,28.02z M32.119,19.835l-0.259,0.279	c-0.719,0.769-1.457,1.508-2.196,2.248c-0.47,0.48-0.978,0.941-1.467,1.412c0.652,0.163,1.304,0.336,1.956,0.528	c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115c0.01-0.154,0.01-0.317,0.01-0.48C33.519,22.996,33.011,21.286,32.119,19.835z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248c-0.47,0.48-0.978,0.941-1.467,1.412	c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115c0.01-0.154,0.01-0.317,0.01-0.48	C33.519,22.996,33.011,21.286,32.119,19.835z M32.627,28.02c-1.045-0.067-2.081-0.163-3.126-0.259	c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528c0.163,0.432,0.316,0.865,0.47,1.307	c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736L32.627,28.02z M25.312,15.33l0.048,0.375	c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298	c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M26.606,33.62c-0.556-0.884-1.074-1.796-1.592-2.699c-0.23-0.394-0.451-0.788-0.662-1.191c-0.153-0.279-0.547-0.279-0.7,0	c-0.221,0.413-0.451,0.817-0.69,1.21c-0.527,0.903-1.055,1.806-1.611,2.69l-0.24,0.384c0.892,0.279,1.841,0.423,2.819,0.423	c1.007,0,1.985-0.154,2.896-0.452L26.606,33.62z M19.875,27.492c-0.451,0.058-0.892,0.125-1.342,0.173	c-1.045,0.125-2.071,0.25-3.116,0.346l-0.518,0.048c0.7,1.96,2.023,3.631,3.72,4.765l0.134-0.404	c0.326-0.999,0.671-1.979,1.026-2.968c0.163-0.48,0.336-0.951,0.518-1.431C20.412,27.741,20.172,27.444,19.875,27.492z M19.338,23.111c-0.326-0.298-0.642-0.596-0.959-0.913c-0.748-0.74-1.486-1.47-2.215-2.229l-0.307-0.317	c-0.959,1.489-1.515,3.266-1.515,5.178c0,0.183,0.01,0.355,0.01,0.528l0.451-0.154c0.988-0.355,1.985-0.663,2.972-0.989	c0.47-0.154,0.94-0.288,1.409-0.432C19.482,23.697,19.568,23.322,19.338,23.111z M19.875,27.492	c-0.451,0.058-0.892,0.125-1.342,0.173c-1.045,0.125-2.071,0.25-3.116,0.346l-0.518,0.048c0.7,1.96,2.023,3.631,3.72,4.765	l0.134-0.404c0.326-0.999,0.671-1.979,1.026-2.968c0.163-0.48,0.336-0.951,0.518-1.431C20.412,27.741,20.172,27.444,19.875,27.492z M26.606,33.62c-0.556-0.884-1.074-1.796-1.592-2.699c-0.23-0.394-0.451-0.788-0.662-1.191c-0.153-0.279-0.547-0.279-0.7,0	c-0.221,0.413-0.451,0.817-0.69,1.21c-0.527,0.903-1.055,1.806-1.611,2.69l-0.24,0.384c0.892,0.279,1.841,0.423,2.819,0.423	c1.007,0,1.985-0.154,2.896-0.452L26.606,33.62z M25.312,15.33l0.048,0.375c0.134,1.037,0.23,2.085,0.326,3.122	c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298c0.326-0.24,0.662-0.48,1.007-0.711	c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M32.627,28.02	c-1.045-0.067-2.081-0.163-3.126-0.259c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528	c0.163,0.432,0.316,0.865,0.47,1.307c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736	L32.627,28.02z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248c-0.47,0.48-0.978,0.941-1.467,1.412	c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115c0.01-0.154,0.01-0.317,0.01-0.48	C33.519,22.996,33.011,21.286,32.119,19.835z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248	c-0.47,0.48-0.978,0.941-1.467,1.412c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115	c0.01-0.154,0.01-0.317,0.01-0.48C33.519,22.996,33.011,21.286,32.119,19.835z M29.501,27.761c-0.451-0.038-0.892-0.086-1.342-0.135	c-0.288-0.038-0.518,0.25-0.412,0.528c0.163,0.432,0.316,0.865,0.47,1.307c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346	c1.668-1.143,2.963-2.795,3.643-4.736l-0.336-0.019C31.582,27.953,30.547,27.857,29.501,27.761z M30.355,17.703	c-1.371-1.249-3.116-2.104-5.043-2.373l0.048,0.375c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23	c0.019,0.317,0.374,0.48,0.633,0.298c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739L30.355,17.703z M25.014,30.921c-0.23-0.394-0.451-0.788-0.662-1.191c-0.153-0.279-0.547-0.279-0.7,0c-0.221,0.413-0.451,0.817-0.69,1.21	c-0.527,0.903-1.055,1.806-1.611,2.69l-0.24,0.384c0.892,0.279,1.841,0.423,2.819,0.423c1.007,0,1.985-0.154,2.896-0.452	l-0.221-0.365C26.05,32.737,25.532,31.824,25.014,30.921z M19.875,27.492c-0.451,0.058-0.892,0.125-1.342,0.173	c-1.045,0.125-2.071,0.25-3.116,0.346l-0.518,0.048c0.7,1.96,2.023,3.631,3.72,4.765l0.134-0.404	c0.326-0.999,0.671-1.979,1.026-2.968c0.163-0.48,0.336-0.951,0.518-1.431C20.412,27.741,20.172,27.444,19.875,27.492z M19.185,23.783c0.297-0.086,0.384-0.461,0.153-0.672c-0.326-0.298-0.642-0.596-0.959-0.913c-0.748-0.74-1.486-1.47-2.215-2.229	l-0.307-0.317c-0.959,1.489-1.515,3.266-1.515,5.178c0,0.183,0.01,0.355,0.01,0.528l0.451-0.154	c0.988-0.355,1.985-0.663,2.972-0.989C18.245,24.062,18.715,23.928,19.185,23.783z M44.766,28.174l-3.663-16.12	c-0.163-0.72-0.642-1.316-1.304-1.643L24.976,3.245c-0.662-0.327-1.429-0.327-2.09,0L8.063,10.411	c-0.662,0.327-1.141,0.922-1.304,1.643l-3.663,16.12c-0.163,0.72,0.01,1.47,0.46,2.037l10.259,12.93	c0.46,0.576,1.16,0.913,1.889,0.913h16.453c0.729,0,1.429-0.336,1.889-0.913l10.259-12.93	C44.756,29.643,44.929,28.894,44.766,28.174z M39.646,28.846c-0.288,0.067-0.575,0-0.805-0.144c-0.47-0.317-0.968-0.49-1.467-0.634	c-0.249-0.067-0.508-0.125-0.757-0.163c-0.249-0.077-0.537,0-0.825,0.134c-0.288,0.163-0.547,0.135-0.815,0.115h-0.029	c-0.825,2.738-2.637,5.053-5.034,6.523v0.01c0.077,0.25,0.163,0.49,0.086,0.817c-0.067,0.317-0.077,0.605,0.058,0.836	c0.105,0.231,0.221,0.471,0.345,0.692c0.259,0.451,0.547,0.903,0.968,1.278c0.422,0.394,0.451,1.047,0.067,1.479	c-0.393,0.423-1.045,0.451-1.477,0.067c-0.221-0.202-0.336-0.471-0.336-0.749c-0.019-0.567-0.163-1.066-0.336-1.566	c-0.086-0.24-0.182-0.48-0.297-0.72c-0.086-0.25-0.316-0.423-0.595-0.586c-0.268-0.144-0.403-0.346-0.537-0.567	c-1.227,0.452-2.55,0.692-3.931,0.692c-1.361,0-2.665-0.24-3.874-0.672c-0.115,0.211-0.249,0.403-0.518,0.548	c-0.278,0.154-0.508,0.336-0.594,0.586c-0.115,0.231-0.221,0.471-0.307,0.711c-0.173,0.5-0.326,0.999-0.336,1.566	c-0.019,0.576-0.508,1.028-1.083,1.009c-0.575-0.019-1.026-0.499-1.007-1.076c0.01-0.298,0.144-0.557,0.345-0.74	c0.422-0.384,0.71-0.826,0.978-1.268c0.125-0.231,0.24-0.461,0.345-0.701c0.134-0.221,0.125-0.519,0.067-0.836	c-0.067-0.298,0-0.538,0.077-0.759c-2.407-1.451-4.248-3.756-5.091-6.494c-0.221,0.019-0.431,0.019-0.681-0.106	c-0.297-0.125-0.575-0.202-0.825-0.115c-0.259,0.048-0.508,0.115-0.757,0.192c-0.499,0.163-0.988,0.346-1.448,0.672	c-0.47,0.336-1.122,0.221-1.457-0.25c-0.326-0.471-0.221-1.124,0.249-1.451c0.24-0.173,0.537-0.231,0.805-0.183	c0.547,0.115,1.074,0.077,1.592,0.01c0.259-0.029,0.518-0.077,0.767-0.144c0.259-0.019,0.489-0.211,0.7-0.451	c0.182-0.211,0.393-0.298,0.604-0.375c-0.038-0.394-0.058-0.797-0.058-1.201c0-2.459,0.767-4.736,2.081-6.609	c-0.173-0.173-0.336-0.346-0.403-0.653c-0.086-0.307-0.201-0.576-0.422-0.72c-0.201-0.173-0.403-0.327-0.614-0.471	c-0.441-0.288-0.892-0.557-1.429-0.72c-0.556-0.154-0.882-0.74-0.719-1.287c0.163-0.557,0.738-0.874,1.294-0.72	c0.278,0.086,0.508,0.279,0.633,0.519c0.259,0.5,0.614,0.893,0.988,1.258c0.182,0.183,0.384,0.355,0.585,0.509	c0.182,0.192,0.47,0.25,0.786,0.269c0.336,0.01,0.546,0.154,0.767,0.298l0.01,0.01c1.803-1.748,4.18-2.901,6.817-3.151	c0.029-0.259,0.048-0.519,0.249-0.778c0.192-0.259,0.326-0.519,0.297-0.778c0.01-0.259,0-0.519-0.019-0.788	c-0.058-0.519-0.134-1.038-0.355-1.556c-0.23-0.528,0.019-1.143,0.547-1.374c0.527-0.221,1.141,0.019,1.371,0.548	c0.115,0.279,0.105,0.576,0,0.826c-0.221,0.519-0.297,1.037-0.355,1.556c-0.019,0.269-0.029,0.528-0.019,0.788	c-0.029,0.259,0.105,0.519,0.297,0.778c0.201,0.259,0.221,0.519,0.249,0.778c2.704,0.259,5.139,1.46,6.961,3.285	c0.221-0.144,0.431-0.298,0.767-0.307c0.316-0.019,0.604-0.077,0.786-0.269c0.201-0.163,0.393-0.336,0.585-0.519	c0.364-0.365,0.719-0.759,0.978-1.258c0.259-0.519,0.892-0.72,1.4-0.451c0.518,0.259,0.719,0.893,0.451,1.403	c-0.134,0.269-0.364,0.452-0.633,0.528c-0.537,0.154-0.988,0.432-1.419,0.72c-0.211,0.154-0.422,0.307-0.614,0.48	c-0.221,0.144-0.336,0.413-0.422,0.72c-0.067,0.327-0.249,0.509-0.431,0.701c1.246,1.835,1.966,4.054,1.966,6.436	c0,0.365-0.019,0.73-0.048,1.086h0.01c0.249,0.077,0.499,0.144,0.719,0.403c0.221,0.231,0.451,0.403,0.71,0.423	c0.259,0.058,0.508,0.096,0.767,0.125c0.527,0.048,1.045,0.067,1.601-0.058c0.566-0.125,1.122,0.231,1.246,0.797	C40.566,28.164,40.211,28.721,39.646,28.846z M31.86,20.114c-0.719,0.769-1.457,1.508-2.196,2.248	c-0.47,0.48-0.978,0.941-1.467,1.412c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115	c0.01-0.154,0.01-0.317,0.01-0.48c0-1.835-0.508-3.545-1.4-4.995L31.86,20.114z M29.501,27.761	c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528c0.163,0.432,0.316,0.865,0.47,1.307	c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736l-0.336-0.019	C31.582,27.953,30.547,27.857,29.501,27.761z M30.355,17.703c-1.371-1.249-3.116-2.104-5.043-2.373l0.048,0.375	c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298	c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739L30.355,17.703z M25.014,30.921	c-0.23-0.394-0.451-0.788-0.662-1.191c-0.153-0.279-0.547-0.279-0.7,0c-0.221,0.413-0.451,0.817-0.69,1.21	c-0.527,0.903-1.055,1.806-1.611,2.69l-0.24,0.384c0.892,0.279,1.841,0.423,2.819,0.423c1.007,0,1.985-0.154,2.896-0.452	l-0.221-0.365C26.05,32.737,25.532,31.824,25.014,30.921z M22.176,18.827c0.096-1.038,0.192-2.085,0.326-3.122l0.048-0.375	c-1.85,0.259-3.528,1.057-4.871,2.229l0.297,0.183c0.892,0.557,1.755,1.143,2.618,1.729c0.499,0.317,0.968,0.672,1.438,1.009	C22.071,19.931,22.119,19.374,22.176,18.827z M19.875,27.492c-0.451,0.058-0.892,0.125-1.342,0.173	c-1.045,0.125-2.071,0.25-3.116,0.346l-0.518,0.048c0.7,1.96,2.023,3.631,3.72,4.765l0.134-0.404	c0.326-0.999,0.671-1.979,1.026-2.968c0.163-0.48,0.336-0.951,0.518-1.431C20.412,27.741,20.172,27.444,19.875,27.492z M19.185,23.783c0.297-0.086,0.384-0.461,0.153-0.672c-0.326-0.298-0.642-0.596-0.959-0.913c-0.748-0.74-1.486-1.47-2.215-2.229	l-0.307-0.317c-0.959,1.489-1.515,3.266-1.515,5.178c0,0.183,0.01,0.355,0.01,0.528l0.451-0.154	c0.988-0.355,1.985-0.663,2.972-0.989C18.245,24.062,18.715,23.928,19.185,23.783z M19.338,23.111	c-0.326-0.298-0.642-0.596-0.959-0.913c-0.748-0.74-1.486-1.47-2.215-2.229l-0.307-0.317c-0.959,1.489-1.515,3.266-1.515,5.178	c0,0.183,0.01,0.355,0.01,0.528l0.451-0.154c0.988-0.355,1.985-0.663,2.972-0.989c0.47-0.154,0.94-0.288,1.409-0.432	C19.482,23.697,19.568,23.322,19.338,23.111z M19.875,27.492c-0.451,0.058-0.892,0.125-1.342,0.173	c-1.045,0.125-2.071,0.25-3.116,0.346l-0.518,0.048c0.7,1.96,2.023,3.631,3.72,4.765l0.134-0.404	c0.326-0.999,0.671-1.979,1.026-2.968c0.163-0.48,0.336-0.951,0.518-1.431C20.412,27.741,20.172,27.444,19.875,27.492z M26.606,33.62c-0.556-0.884-1.074-1.796-1.592-2.699c-0.23-0.394-0.451-0.788-0.662-1.191c-0.153-0.279-0.547-0.279-0.7,0	c-0.221,0.413-0.451,0.817-0.69,1.21c-0.527,0.903-1.055,1.806-1.611,2.69l-0.24,0.384c0.892,0.279,1.841,0.423,2.819,0.423	c1.007,0,1.985-0.154,2.896-0.452L26.606,33.62z M25.312,15.33l0.048,0.375c0.134,1.037,0.23,2.085,0.326,3.122	c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298c0.326-0.24,0.662-0.48,1.007-0.711	c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M32.627,28.02	c-1.045-0.067-2.081-0.163-3.126-0.259c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528	c0.163,0.432,0.316,0.865,0.47,1.307c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736	L32.627,28.02z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248c-0.47,0.48-0.978,0.941-1.467,1.412	c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115c0.01-0.154,0.01-0.317,0.01-0.48	C33.519,22.996,33.011,21.286,32.119,19.835z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248	c-0.47,0.48-0.978,0.941-1.467,1.412c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115	c0.01-0.154,0.01-0.317,0.01-0.48C33.519,22.996,33.011,21.286,32.119,19.835z M32.627,28.02c-1.045-0.067-2.081-0.163-3.126-0.259	c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528c0.163,0.432,0.316,0.865,0.47,1.307	c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736L32.627,28.02z M25.312,15.33l0.048,0.375	c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298	c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M26.606,33.62c-0.556-0.884-1.074-1.796-1.592-2.699c-0.23-0.394-0.451-0.788-0.662-1.191c-0.153-0.279-0.547-0.279-0.7,0	c-0.221,0.413-0.451,0.817-0.69,1.21c-0.527,0.903-1.055,1.806-1.611,2.69l-0.24,0.384c0.892,0.279,1.841,0.423,2.819,0.423	c1.007,0,1.985-0.154,2.896-0.452L26.606,33.62z M19.875,27.492c-0.451,0.058-0.892,0.125-1.342,0.173	c-1.045,0.125-2.071,0.25-3.116,0.346l-0.518,0.048c0.7,1.96,2.023,3.631,3.72,4.765l0.134-0.404	c0.326-0.999,0.671-1.979,1.026-2.968c0.163-0.48,0.336-0.951,0.518-1.431C20.412,27.741,20.172,27.444,19.875,27.492z M19.338,23.111c-0.326-0.298-0.642-0.596-0.959-0.913c-0.748-0.74-1.486-1.47-2.215-2.229l-0.307-0.317	c-0.959,1.489-1.515,3.266-1.515,5.178c0,0.183,0.01,0.355,0.01,0.528l0.451-0.154c0.988-0.355,1.985-0.663,2.972-0.989	c0.47-0.154,0.94-0.288,1.409-0.432C19.482,23.697,19.568,23.322,19.338,23.111z M19.875,27.492	c-0.451,0.058-0.892,0.125-1.342,0.173c-1.045,0.125-2.071,0.25-3.116,0.346l-0.518,0.048c0.7,1.96,2.023,3.631,3.72,4.765	l0.134-0.404c0.326-0.999,0.671-1.979,1.026-2.968c0.163-0.48,0.336-0.951,0.518-1.431C20.412,27.741,20.172,27.444,19.875,27.492z M26.606,33.62c-0.556-0.884-1.074-1.796-1.592-2.699c-0.23-0.394-0.451-0.788-0.662-1.191c-0.153-0.279-0.547-0.279-0.7,0	c-0.221,0.413-0.451,0.817-0.69,1.21c-0.527,0.903-1.055,1.806-1.611,2.69l-0.24,0.384c0.892,0.279,1.841,0.423,2.819,0.423	c1.007,0,1.985-0.154,2.896-0.452L26.606,33.62z M25.312,15.33l0.048,0.375c0.134,1.037,0.23,2.085,0.326,3.122	c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298c0.326-0.24,0.662-0.48,1.007-0.711	c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M32.627,28.02	c-1.045-0.067-2.081-0.163-3.126-0.259c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528	c0.163,0.432,0.316,0.865,0.47,1.307c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736	L32.627,28.02z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248c-0.47,0.48-0.978,0.941-1.467,1.412	c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115c0.01-0.154,0.01-0.317,0.01-0.48	C33.519,22.996,33.011,21.286,32.119,19.835z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248	c-0.47,0.48-0.978,0.941-1.467,1.412c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115	c0.01-0.154,0.01-0.317,0.01-0.48C33.519,22.996,33.011,21.286,32.119,19.835z M32.627,28.02c-1.045-0.067-2.081-0.163-3.126-0.259	c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528c0.163,0.432,0.316,0.865,0.47,1.307	c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736L32.627,28.02z M25.312,15.33l0.048,0.375	c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298	c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M26.606,33.62c-0.556-0.884-1.074-1.796-1.592-2.699c-0.23-0.394-0.451-0.788-0.662-1.191c-0.153-0.279-0.547-0.279-0.7,0	c-0.221,0.413-0.451,0.817-0.69,1.21c-0.527,0.903-1.055,1.806-1.611,2.69l-0.24,0.384c0.892,0.279,1.841,0.423,2.819,0.423	c1.007,0,1.985-0.154,2.896-0.452L26.606,33.62z M19.875,27.492c-0.451,0.058-0.892,0.125-1.342,0.173	c-1.045,0.125-2.071,0.25-3.116,0.346l-0.518,0.048c0.7,1.96,2.023,3.631,3.72,4.765l0.134-0.404	c0.326-0.999,0.671-1.979,1.026-2.968c0.163-0.48,0.336-0.951,0.518-1.431C20.412,27.741,20.172,27.444,19.875,27.492z M26.606,33.62c-0.556-0.884-1.074-1.796-1.592-2.699c-0.23-0.394-0.451-0.788-0.662-1.191c-0.153-0.279-0.547-0.279-0.7,0	c-0.221,0.413-0.451,0.817-0.69,1.21c-0.527,0.903-1.055,1.806-1.611,2.69l-0.24,0.384c0.892,0.279,1.841,0.423,2.819,0.423	c1.007,0,1.985-0.154,2.896-0.452L26.606,33.62z M25.312,15.33l0.048,0.375c0.134,1.037,0.23,2.085,0.326,3.122	c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298c0.326-0.24,0.662-0.48,1.007-0.711	c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M32.627,28.02	c-1.045-0.067-2.081-0.163-3.126-0.259c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528	c0.163,0.432,0.316,0.865,0.47,1.307c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736	L32.627,28.02z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248c-0.47,0.48-0.978,0.941-1.467,1.412	c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115c0.01-0.154,0.01-0.317,0.01-0.48	C33.519,22.996,33.011,21.286,32.119,19.835z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248	c-0.47,0.48-0.978,0.941-1.467,1.412c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115	c0.01-0.154,0.01-0.317,0.01-0.48C33.519,22.996,33.011,21.286,32.119,19.835z M32.627,28.02c-1.045-0.067-2.081-0.163-3.126-0.259	c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528c0.163,0.432,0.316,0.865,0.47,1.307	c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736L32.627,28.02z M25.312,15.33l0.048,0.375	c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298	c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M26.606,33.62c-0.556-0.884-1.074-1.796-1.592-2.699c-0.23-0.394-0.451-0.788-0.662-1.191c-0.153-0.279-0.547-0.279-0.7,0	c-0.221,0.413-0.451,0.817-0.69,1.21c-0.527,0.903-1.055,1.806-1.611,2.69l-0.24,0.384c0.892,0.279,1.841,0.423,2.819,0.423	c1.007,0,1.985-0.154,2.896-0.452L26.606,33.62z M26.606,33.62c-0.556-0.884-1.074-1.796-1.592-2.699	c-0.23-0.394-0.451-0.788-0.662-1.191c-0.153-0.279-0.547-0.279-0.7,0c-0.221,0.413-0.451,0.817-0.69,1.21	c-0.527,0.903-1.055,1.806-1.611,2.69l-0.24,0.384c0.892,0.279,1.841,0.423,2.819,0.423c1.007,0,1.985-0.154,2.896-0.452	L26.606,33.62z M25.312,15.33l0.048,0.375c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23	c0.019,0.317,0.374,0.48,0.633,0.298c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202	C28.984,16.454,27.239,15.599,25.312,15.33z M32.627,28.02c-1.045-0.067-2.081-0.163-3.126-0.259	c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528c0.163,0.432,0.316,0.865,0.47,1.307	c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736L32.627,28.02z M32.119,19.835l-0.259,0.279	c-0.719,0.769-1.457,1.508-2.196,2.248c-0.47,0.48-0.978,0.941-1.467,1.412c0.652,0.163,1.304,0.336,1.956,0.528	c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115c0.01-0.154,0.01-0.317,0.01-0.48C33.519,22.996,33.011,21.286,32.119,19.835z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248c-0.47,0.48-0.978,0.941-1.467,1.412	c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115c0.01-0.154,0.01-0.317,0.01-0.48	C33.519,22.996,33.011,21.286,32.119,19.835z M32.627,28.02c-1.045-0.067-2.081-0.163-3.126-0.259	c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528c0.163,0.432,0.316,0.865,0.47,1.307	c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736L32.627,28.02z M25.312,15.33l0.048,0.375	c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298	c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M26.606,33.62c-0.556-0.884-1.074-1.796-1.592-2.699c-0.23-0.394-0.451-0.788-0.662-1.191c-0.153-0.279-0.547-0.279-0.7,0	c-0.221,0.413-0.451,0.817-0.69,1.21c-0.527,0.903-1.055,1.806-1.611,2.69l-0.24,0.384c0.892,0.279,1.841,0.423,2.819,0.423	c1.007,0,1.985-0.154,2.896-0.452L26.606,33.62z M25.312,15.33l0.048,0.375c0.134,1.037,0.23,2.085,0.326,3.122	c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298c0.326-0.24,0.662-0.48,1.007-0.711	c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M32.627,28.02	c-1.045-0.067-2.081-0.163-3.126-0.259c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528	c0.163,0.432,0.316,0.865,0.47,1.307c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736	L32.627,28.02z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248c-0.47,0.48-0.978,0.941-1.467,1.412	c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115c0.01-0.154,0.01-0.317,0.01-0.48	C33.519,22.996,33.011,21.286,32.119,19.835z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248	c-0.47,0.48-0.978,0.941-1.467,1.412c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115	c0.01-0.154,0.01-0.317,0.01-0.48C33.519,22.996,33.011,21.286,32.119,19.835z M32.627,28.02c-1.045-0.067-2.081-0.163-3.126-0.259	c-0.451-0.038-0.892-0.086-1.342-0.135c-0.288-0.038-0.518,0.25-0.412,0.528c0.163,0.432,0.316,0.865,0.47,1.307	c0.336,0.98,0.681,1.969,0.997,2.968l0.105,0.346c1.668-1.143,2.963-2.795,3.643-4.736L32.627,28.02z M25.312,15.33l0.048,0.375	c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298	c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M25.312,15.33l0.048,0.375c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23	c0.019,0.317,0.374,0.48,0.633,0.298c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202	C28.984,16.454,27.239,15.599,25.312,15.33z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248	c-0.47,0.48-0.978,0.941-1.467,1.412c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115	c0.01-0.154,0.01-0.317,0.01-0.48C33.519,22.996,33.011,21.286,32.119,19.835z M32.119,19.835l-0.259,0.279	c-0.719,0.769-1.457,1.508-2.196,2.248c-0.47,0.48-0.978,0.941-1.467,1.412c0.652,0.163,1.304,0.336,1.956,0.528	c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115c0.01-0.154,0.01-0.317,0.01-0.48C33.519,22.996,33.011,21.286,32.119,19.835z M25.312,15.33l0.048,0.375c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23	c0.019,0.317,0.374,0.48,0.633,0.298c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202	C28.984,16.454,27.239,15.599,25.312,15.33z M25.312,15.33l0.048,0.375c0.134,1.037,0.23,2.085,0.326,3.122	c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298c0.326-0.24,0.662-0.48,1.007-0.711	c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M32.119,19.835l-0.259,0.279	c-0.719,0.769-1.457,1.508-2.196,2.248c-0.47,0.48-0.978,0.941-1.467,1.412c0.652,0.163,1.304,0.336,1.956,0.528	c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115c0.01-0.154,0.01-0.317,0.01-0.48C33.519,22.996,33.011,21.286,32.119,19.835z M32.119,19.835l-0.259,0.279c-0.719,0.769-1.457,1.508-2.196,2.248c-0.47,0.48-0.978,0.941-1.467,1.412	c0.652,0.163,1.304,0.336,1.956,0.528c1.007,0.288,2.004,0.567,3.001,0.893l0.355,0.115c0.01-0.154,0.01-0.317,0.01-0.48	C33.519,22.996,33.011,21.286,32.119,19.835z M25.312,15.33l0.048,0.375c0.134,1.037,0.23,2.085,0.326,3.122	c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298c0.326-0.24,0.662-0.48,1.007-0.711	c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M25.312,15.33l0.048,0.375	c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23c0.019,0.317,0.374,0.48,0.633,0.298	c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202C28.984,16.454,27.239,15.599,25.312,15.33z M25.312,15.33l0.048,0.375c0.134,1.037,0.23,2.085,0.326,3.122c0.038,0.413,0.077,0.817,0.105,1.23	c0.019,0.317,0.374,0.48,0.633,0.298c0.326-0.24,0.662-0.48,1.007-0.711c0.863-0.586,1.716-1.172,2.598-1.739l0.326-0.202	C28.984,16.454,27.239,15.599,25.312,15.33z"/><path fill="none" d="M12.933,28.231c-0.221,0.019-0.431,0.019-0.681-0.106c-0.297-0.125-0.575-0.202-0.825-0.115	c-0.259,0.048-0.508,0.115-0.757,0.192c-0.499,0.163-0.988,0.346-1.448,0.672c-0.47,0.336-1.122,0.221-1.457-0.25	c-0.326-0.471-0.221-1.124,0.249-1.451c0.24-0.173,0.537-0.231,0.805-0.183c0.547,0.115,1.074,0.077,1.592,0.01	c0.259-0.029,0.518-0.077,0.767-0.144c0.259-0.019,0.489-0.211,0.7-0.451c0.182-0.211,0.393-0.298,0.604-0.375	C12.569,26.781,12.713,27.52,12.933,28.231z"/><path fill="none" d="M20.057,35.686c-0.115,0.211-0.249,0.403-0.518,0.548c-0.278,0.154-0.508,0.336-0.594,0.586	c-0.115,0.231-0.221,0.471-0.307,0.711c-0.173,0.5-0.326,0.999-0.336,1.566c-0.019,0.576-0.508,1.028-1.083,1.009	c-0.575-0.019-1.026-0.499-1.007-1.076c0.01-0.298,0.144-0.557,0.345-0.74c0.422-0.384,0.71-0.826,0.978-1.268	c0.125-0.231,0.24-0.461,0.345-0.701c0.134-0.221,0.125-0.519,0.067-0.836c-0.067-0.298,0-0.538,0.077-0.759	C18.667,35.11,19.348,35.436,20.057,35.686z"/><path fill="none" d="M31.438,39.788c-0.393,0.423-1.045,0.451-1.477,0.067c-0.221-0.202-0.336-0.471-0.336-0.749	c-0.019-0.567-0.163-1.066-0.336-1.566c-0.086-0.24-0.182-0.48-0.297-0.72c-0.086-0.25-0.316-0.423-0.595-0.586	c-0.268-0.144-0.403-0.346-0.537-0.567c0.719-0.259,1.409-0.596,2.052-0.989v0.01c0.077,0.25,0.163,0.49,0.086,0.817	c-0.067,0.317-0.077,0.605,0.058,0.836c0.105,0.231,0.221,0.471,0.345,0.692c0.259,0.451,0.547,0.903,0.968,1.278	C31.793,38.702,31.822,39.356,31.438,39.788z"/><path fill="none" d="M39.646,28.846c-0.288,0.067-0.575,0-0.805-0.144c-0.47-0.317-0.968-0.49-1.467-0.634	c-0.249-0.067-0.508-0.125-0.757-0.163c-0.249-0.077-0.537,0-0.825,0.134c-0.288,0.163-0.547,0.135-0.815,0.115h-0.029	c0.221-0.72,0.364-1.47,0.441-2.238h0.01c0.249,0.077,0.499,0.144,0.719,0.403c0.221,0.231,0.451,0.403,0.71,0.423	c0.259,0.058,0.508,0.096,0.767,0.125c0.527,0.048,1.045,0.067,1.601-0.058c0.566-0.125,1.122,0.231,1.246,0.797	C40.566,28.164,40.211,28.721,39.646,28.846z"/></svg>[m
+\ No newline at end of file[m
+[1mdiff --git a/stack/MaterialUI.svg b/stack/MaterialUI.svg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cbcd08c[m
+[1m--- /dev/null[m
+[1m+++ b/stack/MaterialUI.svg[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32m<svg viewBox="0 0 600 476.30000000000007" xmlns="http://www.w3.org/2000/svg" width="2500" height="1985"><path d="M0 259.8V0l225 129.9v86.6L75 129.9v173.2z" fill="#00b0ff"/><path d="M225 129.9L450 0v259.8l-150 86.6-75-43.3 150-86.6v-86.6l-150 86.6z" fill="#0081cb"/><path d="M225 303.1v86.6l150 86.6v-86.6z" fill="#00b0ff"/><path d="M375 476.3l225-129.9V173.2l-75 43.3v86.6l-150 86.6zm150-346.4V43.3L600 0v86.6z" fill="#0081cb"/></svg>[m
+\ No newline at end of file[m
+[1mdiff --git a/stack/MongoDB.svg b/stack/MongoDB.svg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..685dc86[m
+[1m--- /dev/null[m
+[1m+++ b/stack/MongoDB.svg[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32m<!-- Generated by IcoMoon.io -->[m
+[32m+[m[32m<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">[m
+[32m+[m[32m<title>mongodb</title>[m
+[32m+[m[32m<path fill="#47a248" d="M22.907 12.691c-1.684-7.413-5.656-9.849-6.083-10.781-0.469-0.657-0.977-1.909-0.977-1.909-0.003 0.025-0.005 0.041-0.007 0.065v0.017h-0.001c-0.003 0.020-0.004 0.033-0.005 0.052v0.020h-0.003c0 0.013-0.003 0.024-0.003 0.035v0.035h-0.004c-0.001 0.011-0.001 0.024-0.004 0.033v0.028h-0.003c0 0.009 0 0.020-0.003 0.028v0.027h-0.003c0 0.013-0.001 0.029-0.003 0.043v0.003c-0.004 0.023-0.008 0.045-0.012 0.067v0.011h-0.003c-0.001 0.005-0.004 0.011-0.004 0.016v0.023h-0.004v0.029h-0.007v0.024h-0.007v0.028h-0.005v0.025h-0.005v0.023h-0.008v0.019h-0.005v0.024h-0.005v0.019h-0.007v0.017h-0.004v0.020h-0.005c-0.001 0.001-0.001 0.004-0.001 0.005v0.013h-0.004c-0.001 0.003-0.001 0.005-0.001 0.008v0.008h-0.003c-0.001 0.004-0.003 0.011-0.003 0.013-0.004 0.009-0.009 0.019-0.013 0.028v0.003c-0.003 0.003-0.005 0.007-0.007 0.009v0.011h-0.005v0.011h-0.007v0.011h-0.004v0.013h-0.008v0.019h-0.005v0.005h-0.005v0.011h-0.005v0.015h-0.005v0.011h-0.008v0.015h-0.005v0.011h-0.007v0.011h-0.004v0.013h-0.007v0.011h-0.005v0.008h-0.005v0.011h-0.008v0.012h-0.005v0.008h-0.007v0.011h-0.005v0.015h-0.007v0.005h-0.004v0.011h-0.008v0.005h-0.005v0.013h-0.005v0.005h-0.005v0.011h-0.007v0.008h-0.004l-0.003 0.005v0.005h-0.003c-0.001 0.003-0.003 0.003-0.003 0.005v0.001h-0.001c-0.001 0.004-0.003 0.007-0.005 0.009v0.004h-0.001c-0.007 0.008-0.011 0.016-0.016 0.024v0.001c-0.003 0.003-0.009 0.008-0.012 0.013v0.003h-0.001c-0.001 0.001-0.004 0.003-0.004 0.004v0.004h-0.003l-0.004 0.004v0.001h-0.001c0 0.001-0.003 0.003-0.004 0.005v0.005h-0.004l-0.003 0.003v0.003h-0.003c0 0.003-0.003 0.003-0.003 0.004v0.004h-0.005c0 0.001-0.001 0.003-0.003 0.004v0.008h-0.004v0.005h-0.005v0.008h-0.005v0.011h-0.007v-0.011h-0.007v0.005h-0.005v0.008h-0.007v0.011h-0.007v0.005h-0.005v0.008h-0.005v0.005h-0.005v0.011h-0.008v0.005h-0.005v0.008h-0.007v0.005h-0.005v0.007h-0.007v0.013h-0.003v0.005h-0.008v0.007h-0.005v0.003h-0.005v0.005h-0.007v0.013h-0.005v0.005h-0.007v0.005h-0.005v0.008h-0.007v0.005h-0.007v0.005h-0.005v0.005h-0.005v0.013h-0.005v0.007h-0.008v0.005h-0.005v0.005h-0.007v0.008h-0.005v0.005h-0.007v0.009h-0.005v0.005h-0.008v0.008h-0.003v0.005h-0.005v0.005h-0.007v0.005h-0.005v0.008h-0.007v0.005h-0.004c-0.001 0.001-0.001 0.003-0.001 0.003v0.003h-0.003l-0.005 0.005c0 0-0.003 0.003-0.005 0.004v0.008h-0.005v0.007h-0.005v0.005h-0.005v0.005h-0.004l-0.004 0.004v0.004h-0.003l-0.003 0.003v0.004h-0.003c-0.007 0.008-0.009 0.013-0.019 0.021-0.003 0.003-0.011 0.009-0.016 0.013-0.016 0.011-0.036 0.028-0.052 0.043-0.011 0.007-0.021 0.016-0.029 0.023v0.001h-0.001c-0.021 0.017-0.041 0.033-0.065 0.052v0.001c-0.032 0.027-0.063 0.052-0.099 0.083v-0.001h-0.003c-0.076 0.063-0.156 0.133-0.248 0.212v0.001h-0.001c-0.225 0.197-0.493 0.451-0.793 0.757l-0.025 0.025c-1.813 1.876-4.671 5.785-4.972 12.103-0.027 0.523-0.021 1.031 0.008 1.525v0.012c0.145 2.489 0.927 4.615 1.904 6.341v0.001c0.389 0.688 0.809 1.313 1.235 1.873v0.001c1.469 1.94 2.969 3.089 3.352 3.368 0.588 1.364 0.533 3.705 0.533 3.705l0.859 0.287c0 0-0.175-2.268 0.071-3.363 0.076-0.343 0.256-0.635 0.465-0.883 0.141-0.1 0.56-0.401 1.063-0.86 0.024-0.025 0.037-0.048 0.059-0.072 2.028-1.891 5.816-6.547 4.517-14.132z"></path>[m
+[32m+[m[32m</svg>[m
+[1mdiff --git a/stack/Next.svg b/stack/Next.svg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..312dc61[m
+[1m--- /dev/null[m
+[1m+++ b/stack/Next.svg[m
+[36m@@ -0,0 +1,18 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<svg width="207px" height="124px" viewBox="0 0 207 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">[m
+[32m+[m[32m    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->[m
+[32m+[m[32m    <title>next-black</title>[m
+[32m+[m[32m    <desc>Created with Sketch.</desc>[m
+[32m+[m[32m    <defs></defs>[m
+[32m+[m[32m    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">[m
+[32m+[m[32m        <g id="Black-Next.js" transform="translate(-247.000000, -138.000000)" fill="#000000" fill-rule="nonzero">[m
+[32m+[m[32m            <g id="next-black" transform="translate(247.000000, 138.000000)">[m
+[32m+[m[32m                <g id="EXT-+-Type-something">[m
+[32m+[m[32m                    <path d="M48.9421964,32.6320058 L87.9011585,32.6320058 L87.9011585,35.7136421 L52.5134345,35.7136421 L52.5134345,58.9070103 L85.7908813,58.9070103 L85.7908813,61.9886466 L52.5134345,61.9886466 L52.5134345,87.4526941 L88.306981,87.4526941 L88.306981,90.5343303 L48.9421964,90.5343303 L48.9421964,32.6320058 Z M91.3912326,32.6320058 L95.5306221,32.6320058 L113.8738,58.0960534 L132.622801,32.6320058 L158.124498,0.286809811 L116.22757,60.7722112 L137.817329,90.5343303 L133.51561,90.5343303 L113.8738,63.4483691 L94.1508254,90.5343303 L89.9302715,90.5343303 L111.682358,60.7722112 L91.3912326,32.6320058 Z M139.359455,35.713642 L139.359455,32.6320058 L183.756439,32.6320058 L183.756439,35.7136421 L163.302983,35.7136421 L163.302983,90.5343303 L159.731745,90.5343303 L159.731745,35.7136421 L139.359455,35.713642 Z" id="EXT"></path>[m
+[32m+[m[32m                    <polygon id="Type-something" points="0.202923647 32.6320058 4.66697141 32.6320058 66.2235778 124.303087 40.785176 90.5343303 3.93649086 37.0111732 3.77416185 90.5343303 0.202923647 90.5343303"></polygon>[m
+[32m+[m[32m                </g>[m
+[32m+[m[32m                <path d="M183.396622,86.5227221 C184.134938,86.5227221 184.673474,85.9601075 184.673474,85.233037 C184.673474,84.5059658 184.134938,83.9433513 183.396622,83.9433513 C182.666993,83.9433513 182.11977,84.5059658 182.11977,85.233037 C182.11977,85.9601075 182.666993,86.5227221 183.396622,86.5227221 Z M186.905793,83.1297235 C186.905793,85.2763149 188.460599,86.678523 190.727662,86.678523 C193.142388,86.678523 194.601647,85.233037 194.601647,82.7229099 L194.601647,73.8855335 L192.655968,73.8855335 L192.655968,82.7142542 C192.655968,84.1078073 191.952397,84.8521899 190.710289,84.8521899 C189.598473,84.8521899 188.842785,84.1597409 188.816727,83.1297235 L186.905793,83.1297235 Z M197.146664,83.0172011 C197.285642,85.2503478 199.153145,86.678523 201.932686,86.678523 C204.903321,86.678523 206.762139,85.1811034 206.762139,82.792155 C206.762139,80.9138876 205.702439,79.8752151 203.131364,79.2779777 L201.750279,78.9404092 C200.117298,78.5595622 199.457158,78.0488813 199.457158,77.1573541 C199.457158,76.0321243 200.482113,75.296398 202.019547,75.296398 C203.478806,75.296398 204.48639,76.0148135 204.668797,77.1660091 L206.562359,77.1660091 C206.44944,75.0626962 204.590622,73.5825873 202.045605,73.5825873 C199.309495,73.5825873 197.48542,75.0626962 197.48542,77.2871878 C197.48542,79.1221767 198.519063,80.2127835 200.786126,80.7407758 L202.401734,81.1302779 C204.060773,81.5197807 204.790402,82.091051 204.790402,83.0431676 C204.790402,84.1510859 203.643842,84.9560573 202.08035,84.9560573 C200.403939,84.9560573 199.240006,84.2030196 199.074971,83.0172011 L197.146664,83.0172011 Z" id=".JS"></path>[m
+[32m+[m[32m            </g>[m
+[32m+[m[32m        </g>[m
+[32m+[m[32m    </g>[m
+[32m+[m[32m</svg>[m
+\ No newline at end of file[m
+[1mdiff --git a/stack/NextJsCircle.png b/stack/NextJsCircle.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bc5e45c[m
+Binary files /dev/null and b/stack/NextJsCircle.png differ
+[1mdiff --git a/stack/NodeJs.svg b/stack/NodeJs.svg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..32a174f[m
+[1m--- /dev/null[m
+[1m+++ b/stack/NodeJs.svg[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8" standalone="no"?>[m
+[32m+[m[32m<svg width="255pt" height="204pt" viewBox="0 0 255 204" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">[m
+[32m+[m[32m    <g>[m
+[32m+[m[32m        <path d="M 126.027344 180.09375 C 125.1875 180.09375 124.351562 179.855469 123.59375 179.457031 L 115.945312 174.914062 C 114.789062 174.277344 115.347656 174.039062 115.746094 173.917969 C 117.261719 173.398438 117.578125 173.28125 119.210938 172.324219 C 119.371094 172.246094 119.609375 172.285156 119.769531 172.363281 L 125.667969 175.871094 C 125.867188 175.988281 126.183594 175.988281 126.382812 175.871094 L 149.414062 162.5625 C 149.613281 162.441406 149.773438 162.203125 149.773438 161.925781 L 149.773438 135.347656 C 149.773438 135.070312 149.652344 134.832031 149.414062 134.710938 L 126.382812 121.445312 C 126.183594 121.324219 125.90625 121.324219 125.667969 121.445312 L 102.636719 134.710938 C 102.398438 134.832031 102.277344 135.109375 102.277344 135.347656 L 102.277344 161.925781 C 102.277344 162.164062 102.4375 162.402344 102.636719 162.523438 L 108.933594 166.148438 C 112.359375 167.863281 114.472656 165.828125 114.472656 163.835938 L 114.472656 137.582031 C 114.472656 137.222656 114.75 136.902344 115.148438 136.902344 L 118.058594 136.902344 C 118.414062 136.902344 118.734375 137.183594 118.734375 137.582031 L 118.734375 163.835938 C 118.734375 168.417969 116.265625 171.007812 111.921875 171.007812 C 110.605469 171.007812 109.53125 171.007812 106.621094 169.574219 L 100.566406 166.109375 C 99.089844 165.230469 98.136719 163.636719 98.136719 161.925781 L 98.136719 135.347656 C 98.136719 133.636719 99.050781 132.003906 100.566406 131.164062 L 123.59375 117.859375 C 125.070312 117.019531 126.980469 117.019531 128.417969 117.859375 L 151.445312 131.164062 C 152.921875 132.042969 153.875 133.636719 153.875 135.347656 L 153.875 161.925781 C 153.875 163.636719 152.960938 165.273438 151.445312 166.109375 L 128.417969 179.417969 C 127.738281 179.855469 126.902344 180.09375 126.027344 180.09375 Z M 144.632812 153.875 C 144.632812 148.894531 141.285156 147.582031 134.195312 146.625 C 127.023438 145.667969 126.304688 145.191406 126.304688 143.515625 C 126.304688 142.121094 126.902344 140.289062 132.203125 140.289062 C 136.941406 140.289062 138.695312 141.324219 139.414062 144.511719 C 139.492188 144.832031 139.730469 145.03125 140.050781 145.03125 L 143.039062 145.03125 C 143.238281 145.03125 143.398438 144.953125 143.515625 144.832031 C 143.636719 144.671875 143.714844 144.511719 143.675781 144.3125 C 143.199219 138.816406 139.574219 136.265625 132.203125 136.265625 C 125.628906 136.265625 121.722656 139.054688 121.722656 143.675781 C 121.722656 148.738281 125.628906 150.089844 131.921875 150.730469 C 139.453125 151.484375 140.050781 152.5625 140.050781 154.035156 C 140.050781 156.625 137.980469 157.703125 133.117188 157.703125 C 127.023438 157.703125 125.667969 156.1875 125.230469 153.160156 C 125.1875 152.839844 124.910156 152.601562 124.550781 152.601562 L 121.5625 152.601562 C 121.203125 152.601562 120.886719 152.878906 120.886719 153.277344 C 120.886719 157.144531 122.996094 161.765625 133.078125 161.765625 C 140.449219 161.765625 144.632812 158.898438 144.632812 153.875 Z M 166.347656 133.914062 C 166.347656 136.34375 164.355469 138.335938 161.925781 138.335938 C 159.496094 138.335938 157.503906 136.34375 157.503906 133.914062 C 157.503906 131.40625 159.574219 129.492188 161.925781 129.492188 C 164.316406 129.453125 166.347656 131.40625 166.347656 133.914062 Z M 165.628906 133.914062 C 165.628906 131.84375 163.957031 130.210938 161.886719 130.210938 C 159.851562 130.210938 158.179688 131.84375 158.179688 133.914062 C 158.179688 135.988281 159.851562 137.660156 161.886719 137.660156 C 163.957031 137.621094 165.628906 135.945312 165.628906 133.914062 Z M 163.835938 136.386719 L 162.800781 136.386719 C 162.761719 136.144531 162.601562 134.871094 162.601562 134.832031 C 162.523438 134.550781 162.441406 134.394531 162.085938 134.394531 L 161.207031 134.394531 L 161.207031 136.386719 L 160.25 136.386719 L 160.25 131.40625 L 161.964844 131.40625 C 162.5625 131.40625 163.71875 131.40625 163.71875 132.71875 C 163.71875 133.636719 163.121094 133.835938 162.761719 133.953125 C 163.4375 133.996094 163.480469 134.433594 163.597656 135.070312 C 163.636719 135.46875 163.71875 136.144531 163.835938 136.386719 Z M 162.722656 132.878906 C 162.722656 132.203125 162.242188 132.203125 162.003906 132.203125 L 161.207031 132.203125 L 161.207031 133.597656 L 161.964844 133.597656 C 162.601562 133.597656 162.722656 133.15625 162.722656 132.878906 Z M 54.707031 76.101562 C 54.707031 75.027344 54.148438 74.070312 53.230469 73.550781 L 28.808594 59.488281 C 28.410156 59.246094 27.929688 59.128906 27.453125 59.089844 L 27.214844 59.089844 C 26.734375 59.089844 26.296875 59.246094 25.859375 59.488281 L 1.472656 73.550781 C 0.558594 74.070312 0 75.066406 0 76.101562 L 0.0390625 113.953125 C 0.0390625 114.472656 0.320312 114.949219 0.757812 115.226562 C 1.195312 115.507812 1.753906 115.507812 2.230469 115.226562 L 16.734375 106.902344 C 17.652344 106.34375 18.207031 105.386719 18.207031 104.351562 L 18.207031 86.660156 C 18.207031 85.625 18.765625 84.628906 19.683594 84.109375 L 25.859375 80.5625 C 26.335938 80.285156 26.816406 80.164062 27.332031 80.164062 C 27.851562 80.164062 28.367188 80.285156 28.808594 80.5625 L 34.984375 84.109375 C 35.898438 84.628906 36.457031 85.625 36.457031 86.660156 L 36.457031 104.351562 C 36.457031 105.386719 37.015625 106.382812 37.929688 106.902344 L 52.433594 115.226562 C 52.871094 115.507812 53.46875 115.507812 53.910156 115.226562 C 54.347656 114.988281 54.625 114.472656 54.625 113.953125 Z M 188.261719 34.785156 L 188.261719 105.066406 C 188.261719 106.105469 187.703125 107.101562 186.789062 107.617188 L 162.363281 121.722656 C 161.445312 122.242188 160.332031 122.242188 159.414062 121.722656 L 134.992188 107.617188 C 134.074219 107.101562 133.515625 106.105469 133.515625 105.066406 L 133.515625 76.859375 C 133.515625 75.824219 134.074219 74.828125 134.992188 74.308594 L 159.414062 60.203125 C 160.332031 59.6875 161.445312 59.6875 162.363281 60.203125 L 168.460938 63.710938 C 169.136719 64.109375 170.011719 63.589844 170.011719 62.832031 L 170.011719 25.378906 C 170.011719 24.265625 171.207031 23.546875 172.203125 24.105469 L 186.746094 32.234375 C 187.664062 32.710938 188.261719 33.707031 188.261719 34.785156 Z M 169.933594 86.140625 C 169.933594 85.863281 169.773438 85.625 169.574219 85.503906 L 161.207031 80.644531 C 160.96875 80.523438 160.691406 80.523438 160.449219 80.644531 L 152.082031 85.503906 C 151.84375 85.625 151.726562 85.863281 151.726562 86.140625 L 151.726562 95.824219 C 151.726562 96.101562 151.882812 96.34375 152.082031 96.460938 L 160.449219 101.28125 C 160.691406 101.402344 160.96875 101.402344 161.167969 101.28125 L 169.535156 96.460938 C 169.773438 96.34375 169.894531 96.101562 169.894531 95.824219 L 169.894531 86.140625 Z M 253.527344 85.863281 C 254.441406 85.34375 255 84.347656 255 83.3125 L 255 76.5 C 255 75.464844 254.441406 74.46875 253.527344 73.949219 L 229.261719 59.84375 C 228.34375 59.328125 227.230469 59.328125 226.3125 59.84375 L 201.886719 73.949219 C 200.972656 74.46875 200.414062 75.464844 200.414062 76.5 L 200.414062 104.710938 C 200.414062 105.785156 200.972656 106.742188 201.886719 107.257812 L 226.152344 121.085938 C 227.03125 121.601562 228.144531 121.601562 229.0625 121.085938 L 243.722656 112.917969 C 244.71875 112.359375 244.71875 110.925781 243.722656 110.367188 L 219.140625 96.261719 C 218.664062 95.984375 218.382812 95.503906 218.382812 94.988281 L 218.382812 86.140625 C 218.382812 85.625 218.664062 85.144531 219.140625 84.867188 L 226.789062 80.445312 C 227.230469 80.164062 227.828125 80.164062 228.265625 80.445312 L 235.914062 84.867188 C 236.351562 85.144531 236.671875 85.625 236.671875 86.140625 L 236.671875 93.074219 C 236.671875 94.191406 237.90625 94.90625 238.902344 94.351562 Z M 222.726562 87.257812 C 222.566406 87.378906 222.449219 87.535156 222.449219 87.734375 L 222.449219 93.15625 C 222.449219 93.355469 222.

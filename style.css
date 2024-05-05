@@ -161,6 +161,7 @@
 }
 .user-image{
     
+    background-size: contain;
     padding: 2.5rem;
     filter: grayscale(1);
     transition: all 1s;
@@ -428,18 +429,18 @@
     transform: scale(1.1);
 }
 #project1{
-    background-image: url(projects/Project1.png);
+    background-image: url(projects/talkative.png);
 }
 #project2{
     margin-left: 120px;
-    background-image: url(projects/Project2.png);
+    background-image: url(projects/weather-app.png);
 }
 #project3{
-    background-image: url(projects/Project3.png);
+    background-image: url(projects/toDo.PNG);
 }
 #project4{
     margin-left: 120px;
-    background-image: url(projects/Project4.png);
+    background-image: url(projects/razorpay.PNG);
 }
 
 
