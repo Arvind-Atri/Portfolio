@@ -50,7 +50,8 @@
     font-size: 28px;
 }
 
-.nav_items {
+@media only screen and (min-width:768px){
+    .nav_items {
     display: flex;
     gap: 2rem;
     padding: 0 4em;
@@ -704,6 +705,7 @@ footer {
     color: #fff;
 }
 
+}
 
 
 /* Media queries for responsiveness */
